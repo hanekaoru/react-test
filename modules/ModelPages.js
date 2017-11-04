@@ -21,7 +21,7 @@ function ModelPages(page, conf) {
 
 ModelPages.prototype = {
 	dispatch: function (fn) {
-		$('body').attr('yinlian') && $('body').attr('yinlian').toLowerCase() == this.page.toLowerCase() && fn.call(this, this.conf);
+		$('body').attr('data-loading') && $('body').attr('data-loading').toLowerCase() == this.page.toLowerCase() && fn.call(this, this.conf);
 	}
 }
 
